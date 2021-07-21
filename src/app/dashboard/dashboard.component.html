@@ -1,0 +1,33 @@
+<div class="bg">
+<div class="container">
+    <div class="row">
+      <h3 appHighlight>Welcome {{user}}</h3>
+<div class=" col-12 col-md-6">
+  <div class="noti">
+    <!-- <h3><button (click)="MedicineData()"><i class="fas fa-bell"></i></button></h3> -->
+
+      <p id="medical"></p>
+  </div>
+</div>
+<div class=" col-12 col-md-6">
+    <form (ngSubmit)="addData()" class="home_container">
+      <h1 class="login">Add Data</h1>
+      <div class="form-group">
+        <input type="text" id="medicine" name="medicine" [(ngModel)]="medicine" placeholder="Name of medicine" class="form-control">
+    </div>
+       <div class="form-group">
+        <input type="text" class="form-control" id="quantity"  [(ngModel)]="quantity" name="quantity" placeholder="quantity">
+      </div> 
+      <div class="form-group">
+        <input type="text" class="form-control" id="price"  [(ngModel)]="price" name="price" placeholder="price of the medicine">
+      </div> 
+     
+      <button type="submit" class="btnG">Add</button>
+      
+    </form>
+  </div>
+  
+  </div>
+
+</div>  
+</div>
